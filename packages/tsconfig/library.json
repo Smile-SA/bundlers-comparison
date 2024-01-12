@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "declaration": true,
+    "declarationMap": false,
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "target": "ES2017"
+  },
+  "exclude": ["dist", "node_modules"],
+}

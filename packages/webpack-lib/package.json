@@ -1,0 +1,28 @@
+{
+  "name": "webpack-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/webpack-lib.cjs",
+  "module": "dist/webpack-lib.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": ["*.css"],
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.7",
+    "ts-loader": "^9.5.1",
+    "tsconfig": "*",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

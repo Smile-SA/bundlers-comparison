@@ -1,0 +1,30 @@
+.Component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./bg.jpg');
+  background-size: 50px;
+  background-position: center;
+}
+
+.Component__content {
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.Component__logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.Component__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

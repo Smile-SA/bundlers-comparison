@@ -1,0 +1,29 @@
+{
+  "name": "parcel-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/parcel-lib.cjs",
+  "module": "dist/parcel-lib.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "parcel build",
+    "build:no-cache": "rm -rf ../../.parcel-cache && parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "parcel": "^2.11.0",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  },
+  "browserslist": "> 1%, last 2 versions, not dead",
+  "engines": {
+    "node": ">= 12"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "microbundle-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/microbundle-lib.cjs",
+  "module": "dist/microbundle-lib.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react",
+    "build:no-cache": "rm -rf node_modules && microbundle --jsx React.createElement --jsxFragment React.Fragment --jsxImportSource react"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "microbundle": "^0.15.1",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  }
+}

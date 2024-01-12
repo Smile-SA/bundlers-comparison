@@ -1,0 +1,37 @@
+{
+  "name": "vite-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "dev:no-cache": "rm -rf node_modules && vite",
+    "preview": "serve dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bun-lib": "*",
+    "esbuild-lib": "*",
+    "microbundle-lib": "*",
+    "parcel-lib": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-lib": "*",
+    "tsup-lib": "*",
+    "typescript-lib": "*",
+    "vite-lib": "*",
+    "webpack-lib": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "serve": "^14.2.1",
+    "tsconfig": "*",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}

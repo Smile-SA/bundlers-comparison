@@ -1,0 +1,7 @@
+node_modules
+dist
+
+.rollup.cache
+.parcel-cache
+.cache
+stats.html

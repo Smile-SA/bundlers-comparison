@@ -1,0 +1,8 @@
+{
+  "extends": "tsconfig/library.json",
+  "compilerOptions": {
+    "outDir": "dist/esm",
+    "declarationDir": "dist/types"
+  },
+  "exclude": ["dist", "node_modules"]
+}

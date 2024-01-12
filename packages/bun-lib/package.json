@@ -1,0 +1,23 @@
+{
+  "name": "bun-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:types && npm run build:esm",
+    "build:esm": "NODE_ENV=production bun build src/index.ts --outdir dist --target node --format esm --external react --loader .jpg:dataurl --loader .svg:dataurl",
+    "build:types": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  }
+}

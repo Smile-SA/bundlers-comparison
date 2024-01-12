@@ -1,0 +1,41 @@
+{
+  "name": "parcel-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "build:no-cache": "rm -rf ../../.parcel-cache && parcel build",
+    "dev": "parcel",
+    "preview": "serve dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bun-lib": "*",
+    "esbuild-lib": "*",
+    "microbundle-lib": "*",
+    "parcel-lib": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-lib": "*",
+    "tsup-lib": "*",
+    "typescript-lib": "*",
+    "vite-lib": "*",
+    "webpack-lib": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "parcel": "^2.11.0",
+    "serve": "^14.2.1",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  },
+  "browserslist": "> 1%, last 2 versions, not dead",
+  "engines": {
+    "node": ">= 12"
+  }
+}

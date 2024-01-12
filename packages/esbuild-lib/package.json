@@ -1,0 +1,27 @@
+{
+  "name": "esbuild-lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/esbuild-lib.cjs",
+  "module": "dist/esbuild-lib.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:types && npm run build:module && npm run build:node",
+    "build:types": "tsc",
+    "build:module": "esbuild src/index.ts --outfile=dist/esbuild-lib.mjs --bundle --jsx=automatic --external:react --loader:.jpg=dataurl --loader:.svg=dataurl --format=esm",
+    "build:node": "esbuild src/index.ts --outfile=dist/esbuild-lib.cjs --bundle --jsx=automatic --external:react --loader:.jpg=dataurl --loader:.svg=dataurl --platform=node --format=cjs",
+    "build:browser": "esbuild src/index.ts --outfile=dist/esbuild-lib.js --bundle --jsx=automatic --external:react --loader:.jpg=dataurl --loader:.svg=dataurl --platform=browser --format=iife"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.47",
+    "esbuild": "^0.19.11",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  }
+}

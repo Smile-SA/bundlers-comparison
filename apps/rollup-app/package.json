@@ -1,0 +1,45 @@
+{
+  "name": "rollup-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "build:no-cache": "rm -rf .rollup.cache && rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel watch preview",
+    "preview": "serve dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bun-lib": "*",
+    "esbuild-lib": "*",
+    "microbundle-lib": "*",
+    "parcel-lib": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-lib": "*",
+    "tsup-lib": "*",
+    "typescript-lib": "*",
+    "vite-lib": "*",
+    "webpack-lib": "*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "glob": "^10.3.10",
+    "npm-run-all": "^4.1.5",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-import-css": "^3.4.0",
+    "serve": "^14.2.1",
+    "tsconfig": "*",
+    "typescript": "^5.3.3"
+  }
+}
